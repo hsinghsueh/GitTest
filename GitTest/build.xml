@@ -4,15 +4,25 @@
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. -->
-<project basedir="." default="build" name="GitTest">
+<project basedir="." default="all" name="GitTest">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="F:/Software/Developer/Eclipse/eclipse"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.6"/>
     <property name="source" value="1.6"/>
+	<property name="build.dir" value="./"/>
+    <property name="src.dir" location="${build.dir}/src"/>
+	<property name="test.reports.dir" location="${build.dir}/reports"/>  
+	<property name="test.data.dir" location="${build.dir}/data"/>  
+	<property name="junit.class.name" value="com.tasc.junit.AllTests"/> 
+		
+	<path id="src.classpath">
+		<pathelement location="src"/>
+	</path>
     <path id="GitTest.classpath">
         <pathelement location="bin"/>
     </path>
+	
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
@@ -24,6 +34,13 @@
     </target>
     <target name="clean">
         <delete dir="bin"/>
+    	<delete includeEmptyDirs="true" failonerror="false">
+    		<fileset dir="${test.reports.dir}">
+    			<include name="**/*.txt"/>
+    			<include name="**/*.xml"/>
+    			<include name="**/*.html"/>
+    		</fileset>
+    	</delete>
     </target>
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>
@@ -54,4 +71,28 @@
             <classpath refid="GitTest.classpath"/>
         </java>
     </target>
+	<target name="build-test" depends="build">
+		<javac srcdir="${src.dir}" destdir="${src.dir}" debug="true" includeAntRuntime="false">
+			<include name="**/*.java"/>
+		</javac>
+	</target>
+	<target name="test" depends="build-test">
+		<mkdir dir="${test.data.dir}"/>
+		<mkdir dir="${test.reports.dir}"/>
+		<junit fork="no" haltonfailure="no" showoutput="yes" printsummary="true">
+			<test name="${junit.class.name}" todir="${test.data.dir}"/>
+			<formatter type="brief" usefile="false"/>
+			<formatter type="xml"/>
+			<classpath refid="src.classpath"/>
+			<classpath refid="GitTest.classpath"/>
+		</junit>
+		<junitreport todir="${test.reports.dir}">
+			<fileset dir="${test.data.dir}">
+				<include name="TEST-*.xml"/>
+			</fileset>
+			<report format="frames" todir="${test.reports.dir}"/>
+		</junitreport>
+	</target>
+	
+	<target name="all" depends="test"/>
 </project>

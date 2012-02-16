@@ -1,0 +1,5 @@
+Test use of Addition class
+Result: 9
+Test use of Multiply class
+Result: 20
+
