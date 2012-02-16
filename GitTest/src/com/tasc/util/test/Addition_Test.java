@@ -1,7 +1,7 @@
 package com.tasc.util.test;
 
 import junit.framework.TestCase;
-import com.tasc.util.*;
+import com.tasc.util.Addition;
 
 public class Addition_Test extends TestCase {
 	private int x = 0;
@@ -23,6 +23,6 @@ public class Addition_Test extends TestCase {
 		int z = Addition.twoValues(x, y);
 		System.out.println("Result: " + z);
 		
-		assertEquals(9,z);  //The test
+		assertEquals(9, z);  //The test
 	}
 }

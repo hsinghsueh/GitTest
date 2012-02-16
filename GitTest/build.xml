@@ -10,11 +10,12 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.6"/>
     <property name="source" value="1.6"/>
-	<property name="build.dir" value="./"/>
-    <property name="src.dir" location="${build.dir}/src"/>
-	<property name="test.reports.dir" location="${build.dir}/reports"/>  
-	<property name="test.data.dir" location="${build.dir}/data"/>  
+	<property name="base.dir" value="./"/>
+    <property name="src.dir" location="${base.dir}/src"/>
+	<property name="test.reports.dir" location="${base.dir}/reports"/>  
+	<property name="test.data.dir" location="${base.dir}/data"/>  
 	<property name="junit.class.name" value="com.tasc.junit.AllTests"/> 
+	<property name="checkstyle.dir" location="${base.dir}/lib"/>
 		
 	<path id="src.classpath">
 		<pathelement location="src"/>
@@ -22,6 +23,11 @@
     <path id="GitTest.classpath">
         <pathelement location="bin"/>
     </path>
+	<path id="checkstyle.classpath">
+		<fileset dir="${checkstyle.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
 	
     <target name="init">
         <mkdir dir="bin"/>
@@ -92,6 +98,26 @@
 			</fileset>
 			<report format="frames" todir="${test.reports.dir}"/>
 		</junitreport>
+	</target>	
+	<!--<target name="clover-test" depends="test" description="Run the tests">
+		<mkdir dir="${test.reports.dir}/clover"/>
+		<junit fork="yes" printsummary="true" showoutput="true">
+			<classpath refid="GitTest.classpath"/>
+			<formatter type="xml"/>
+			<batchtest fork="yes" todir="${test.reports.dir}">
+				<fileset dir="src" includes="**/*.java"/>
+			</batchtest>
+		</junit>
+	</target>//-->
+	<target name="checkstyle" depends="test">
+		<mkdir dir="${test.reports.dir}/checkstyle"/>		
+		<!--<taskdef resource="checkstyletask.properties" classpath="${checkstyle.dir}/checkstyle-5.5-all.jar"/>//-->
+		<taskdef name="checkstyle" classname="com.puppycrawl.tools.checkstyle.CheckStyleTask" classpathref="checkstyle.classpath"/>
+		<checkstyle config="docs\sun_checks.xml" failureProperty="checkstyle.failure" failonViolation="false">
+			<formatter type="xml" tofile="checkstyle_report.xml"/>
+			<fileset dir="src" includes="**/*.java"/>
+		</checkstyle>
+		<style in="checkstyle_report.xml" out="${test.reports.dir}/checkstyle/checkstyle_report.html" style="checkstyle-frames.xsl"/>
 	</target>
 	
 	<target name="all" depends="test"/>

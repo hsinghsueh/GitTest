@@ -1,7 +1,7 @@
 package com.tasc.util.test;
 
 import junit.framework.TestCase;
-import com.tasc.util.*;
+import com.tasc.util.Multiply;
 
 public class Multiply_Test extends TestCase {
 	private int x = 0;
@@ -23,6 +23,6 @@ public class Multiply_Test extends TestCase {
 		int z = Multiply.twoValues(x, y);
 		System.out.println("Result: " + z);
 		
-		assertEquals(20,z);
+		assertEquals(20, z);
 	}
 }

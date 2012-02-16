@@ -1,5 +1,6 @@
 
-import com.tasc.util.*;
+import com.tasc.util.Addition;
+import com.tasc.util.Multiply;
 
 public class GitTest {
 

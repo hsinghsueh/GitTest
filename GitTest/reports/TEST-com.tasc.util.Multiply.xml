@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="JamesLu-PC" name="com.tasc.junit.AllTests" tests="2" time="0.034" timestamp="2012-02-16T08:50:01">
+<testsuite errors="1" failures="0" hostname="JamesLu-PC" name="com.tasc.util.Multiply" tests="1" time="0.047" timestamp="2012-02-16T06:04:07">
   <properties>
     <property name="java.vendor" value="Sun Microsystems Inc." />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="eclipse.pdebuild.templates" value="/F:/Software/Developer/Eclipse/eclipse/plugins/org.eclipse.pde.build_3.5.2.R35x_20100114/templates/" />
-    <property name="checkstyle.dir" value="E:\Agile\GitRepos\GitTest\GitTest\lib" />
     <property name="sun.management.compiler" value="HotSpot Client Compiler" />
     <property name="test.data.dir" value="E:\Agile\GitRepos\GitTest\GitTest\data" />
     <property name="env.PROMPT" value="$P$G" />
     <property name="os.name" value="Windows 7" />
     <property name="env.FP_NO_HOST_CHECK" value="NO" />
-    <property name="sun.boot.class.path" value="E:\Program Files\Java\jre6\lib\resources.jar;E:\Program Files\Java\jre6\lib\rt.jar;E:\Program Files\Java\jre6\lib\jsse.jar;E:\Program Files\Java\jre6\lib\jce.jar;E:\Program Files\Java\jre6\lib\charsets.jar;E:\Program Files\Java\jre6\lib\junit-4.10.jar;E:\Program Files\Java\jre6\lib\checkstyle-5.5.jar;E:\Program Files\Java\jre6\lib\checkstyle-5.5-all.jar" />
+    <property name="sun.boot.class.path" value="E:\Program Files\Java\jre6\lib\resources.jar;E:\Program Files\Java\jre6\lib\rt.jar;E:\Program Files\Java\jre6\lib\sunrsasign.jar;E:\Program Files\Java\jre6\lib\jsse.jar;E:\Program Files\Java\jre6\lib\jce.jar;E:\Program Files\Java\jre6\lib\charsets.jar;E:\Program Files\Java\jre6\lib\modules\jdk.boot.jar;E:\Program Files\Java\jre6\classes" />
     <property name="env.COMPUTERNAME" value="JAMESLU-PC" />
     <property name="test.reports.dir" value="E:\Agile\GitRepos\GitTest\GitTest\reports" />
     <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
@@ -22,6 +21,7 @@
     <property name="env.__COMPAT_LAYER" value="ElevateCreateProcess" />
     <property name="user.name" value="James Lu" />
     <property name="env.QTJAVA" value="E:\Program Files\Java\jre6\lib\ext\QTJava.zip" />
+    <property name="build.dir" value="./" />
     <property name="user.language" value="zh" />
     <property name="sun.boot.library.path" value="E:\Program Files\Java\jre6\bin" />
     <property name="ant.project.name" value="GitTest" />
@@ -74,16 +74,15 @@
     <property name="env.CLASSPATH" value="E:\Program Files\Java\jdk1.6.0_20\lib;E:\Program Files\Java\jre6\lib\ext\QTJava.zip" />
     <property name="java.vendor.url" value="http://java.sun.com/" />
     <property name="env.NUMBER_OF_PROCESSORS" value="4" />
-    <property name="java.library.path" value="F:\Software\Developer\Eclipse\eclipse;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:/Program Files/Java/jre6/bin/client;E:/Program Files/Java/jre6/bin;E:\Program Files\SAP\IDE\IDE70\eclipse;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\sdb\programs\bin;C:\sdb\programs\pgm;E:\Program Files\Perl\site\bin;E:\Program Files\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;E:\PROGRA~1\ULTRAE~1;E:\Program Files\Inventec\Dreye\DreyeSA\DreyeTTs\eTTS\;E:\Program Files\Java\jdk1.6.0_20\bin;C:\Program Files\Common Files\Adobe\AGL;C:\Program Files\Windows Live\Shared;C:\Program Files\SAP\SAP Business One\;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;E:\Program Files\QuickTime\QTSystem\;E:\Program Files\Android\android-sdk\tools;E:\Agile\Groovy-1.8.5\bin;E:\Agile\Git\bin;E:\Agile\apache-ant-1.8.2\bin;E:\Program Files\OpenVPN\bin;.;F:\Software\Developer\Eclipse\eclipse\configuration\org.eclipse.osgi\bundles\192\1\.cp" />
+    <property name="java.library.path" value="E:\Program Files\Java\jre6\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:/Program Files/Java/jre6/bin/client;E:/Program Files/Java/jre6/bin;E:\Program Files\SAP\IDE\IDE70\eclipse;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\sdb\programs\bin;C:\sdb\programs\pgm;E:\Program Files\Perl\site\bin;E:\Program Files\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;E:\PROGRA~1\ULTRAE~1;E:\Program Files\Inventec\Dreye\DreyeSA\DreyeTTs\eTTS\;E:\Program Files\Java\jdk1.6.0_20\bin;C:\Program Files\Common Files\Adobe\AGL;C:\Program Files\Windows Live\Shared;C:\Program Files\SAP\SAP Business One\;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;E:\Program Files\QuickTime\QTSystem\;E:\Program Files\Android\android-sdk\tools;E:\Agile\Groovy-1.8.5\bin;E:\Agile\Git\bin;E:\Agile\apache-ant-1.8.2\bin;E:\Program Files\OpenVPN\bin;." />
     <property name="java.vm.vendor" value="Sun Microsystems Inc." />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="ant.version" value="Apache Ant version 1.7.1 compiled on June 27 2008" />
-    <property name="java.class.path" value="F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-antlr.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-bcel.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-bsf.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-log4j.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-oro.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-regexp.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-resolver.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-commons-logging.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-commons-net.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-jai.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-javamail.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-jdepend.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-jmf.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-jsch.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-junit.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-launcher.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-netrexx.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-nodeps.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-starteam.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-stylebook.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-swing.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-trax.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-weblogic.jar;F:\Software\Developer\Eclipse\eclipse\plugins\com.cenqua.clover.ant_3.1.3.v20120117000000\clover-eclipse-ant.jar;F:\Software\Developer\Eclipse\eclipse\configuration\org.eclipse.osgi\bundles\21\1\.cp\lib\remoteAnt.jar;E:\Program Files\Java\jdk1.6.0_20\lib\tools.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.eclipse.swt.win32.win32.x86_3.5.2.v3557f.jar" />
-    <property name="sun.java.command" value="org.eclipse.ant.internal.ui.antsupport.InternalAntRunner -Dorg.eclipse.ant.core.ANT_PROCESS_ID=1329382200828 -Declipse.connect.port=58962 -Declipse.pdebuild.home=/F:/Software/Developer/Eclipse/eclipse/plugins/org.eclipse.pde.build_3.5.2.R35x_20100114/./ -Declipse.pdebuild.scripts=/F:/Software/Developer/Eclipse/eclipse/plugins/org.eclipse.pde.build_3.5.2.R35x_20100114/scripts/ -Declipse.pdebuild.templates=/F:/Software/Developer/Eclipse/eclipse/plugins/org.eclipse.pde.build_3.5.2.R35x_20100114/templates/ -Dclover.license.path=F:\Software\Developer\Eclipse\eclipse\plugins\com.cenqua.clover.ant_3.1.3.v20120117000000\clover.license -Dclover.eclipse.runtime.jar=/F:/Software/Developer/Eclipse/eclipse/plugins/com.cenqua.clover.runtime_3.1.3.v20120117000000/clover-runtime.jar -Dant.home=F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145 -logger org.eclipse.ant.internal.ui.antsupport.logger.RemoteAntBuildLogger -inputhandler org.eclipse.ant.internal.ui.antsupport.inputhandler.ProxyInputHandler -eclipseTask clover-env,com.cenqua.clover.tasks.CloverEnvTask -eclipseTask clover-log,com.cenqua.clover.tasks.CloverLogTask -eclipseTask clover-check,com.cenqua.clover.tasks.CloverPassTask -eclipseTask clover-setup,com.cenqua.clover.tasks.CloverSetupTask -eclipseTask clover-clean,com.cenqua.clover.tasks.CloverCleanTask -eclipseTask clover-historypoint,com.cenqua.clover.tasks.HistoryPointTask -eclipseTask clover-report,com.cenqua.clover.tasks.CloverReportTask -eclipseTask clover-html-report,com.cenqua.clover.tasks.CloverHtmlReportTask -eclipseTask clover-pdf-report,com.cenqua.clover.tasks.CloverPdfReportTask -eclipseTask clover-instr,com.cenqua.clover.tasks.CloverInstrTask -eclipseTask clover-instrument,com.cenqua.clover.tasks.CloverInstrumentTask -eclipseTask clover-merge,com.cenqua.clover.tasks.CloverMergeTask -eclipseType clover-format,com.cenqua.clover.tasks.CloverFormatType -buildfile E:\Agile\GitRepos\GitTest\GitTest\build.xml" />
+    <property name="java.class.path" value="E:\Agile\GitRepos\GitTest\GitTest\bin;E:\Program Files\Java\jdk1.6.0_20\lib;E:\Program Files\Java\jre6\lib\junit-4.10.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-launcher.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant.jar;F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-junit.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.tasc.util.Multiply filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,E:\Agile\GitRepos\GitTest\GitTest\reports\TEST-com.tasc.util.Multiply.xml crashfile=E:\Agile\GitRepos\GitTest\GitTest\junitvmwatcher4374619821992886016.properties propsfile=E:\Agile\GitRepos\GitTest\GitTest\junit3142513389084155538.properties" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="env.windir" value="C:\Windows" />
     <property name="env.LOGONSERVER" value="\\JAMESLU-PC" />
-    <property name="base.dir" value="./" />
     <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
     <property name="java.vm.specification.version" value="1.0" />
     <property name="sun.os.patch.level" value="Service Pack 1" />
@@ -108,13 +107,14 @@
     <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.groovy;.gy" />
     <property name="ant.file.GitTest" value="E:\Agile\GitRepos\GitTest\GitTest\build.xml" />
     <property name="env.Path" value="E:/Program Files/Java/jre6/bin/client;E:/Program Files/Java/jre6/bin;E:\Program Files\SAP\IDE\IDE70\eclipse;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\sdb\programs\bin;C:\sdb\programs\pgm;E:\Program Files\Perl\site\bin;E:\Program Files\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;E:\PROGRA~1\ULTRAE~1;E:\Program Files\Inventec\Dreye\DreyeSA\DreyeTTs\eTTS\;E:\Program Files\Java\jdk1.6.0_20\bin;C:\Program Files\Common Files\Adobe\AGL;C:\Program Files\Windows Live\Shared;C:\Program Files\SAP\SAP Business One\;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;E:\Program Files\QuickTime\QTSystem\;E:\Program Files\Android\android-sdk\tools;E:\Agile\Groovy-1.8.5\bin;E:\Agile\Git\bin;E:\Agile\apache-ant-1.8.2\bin;E:\Program Files\OpenVPN\bin" />
+    <property name="org.apache.tools.ant.taskdefs.optional.junit.AggregateTransformer0" value="C:\Users\JAMESL~1\AppData\Local\Temp\null158577797" />
     <property name="basedir" value="E:\Agile\GitRepos\GitTest\GitTest" />
     <property name="ant.java.version" value="1.6" />
     <property name="ant.core.lib" value="F:\Software\Developer\Eclipse\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant.jar" />
     <property name="env.USERNAME" value="James Lu" />
     <property name="env.SystemDrive" value="C:" />
     <property name="source" value="1.6" />
-    <property name="file.encoding" value="UTF-8" />
+    <property name="file.encoding" value="MS950" />
     <property name="env.VS100COMNTOOLS" value="E:\Program Files\Microsoft Visual Studio 10.0\Common7\Tools\" />
     <property name="env.USERDOMAIN" value="JAMESLU-PC" />
     <property name="java.specification.version" value="1.6" />
@@ -122,12 +122,11 @@
     <property name="clover.eclipse.runtime.jar" value="/F:/Software/Developer/Eclipse/eclipse/plugins/com.cenqua.clover.runtime_3.1.3.v20120117000000/clover-runtime.jar" />
     <property name="env.PROCESSOR_LEVEL" value="6" />
   </properties>
-  <testcase classname="com.tasc.util.test.Addition_Test" name="testAddition" time="0.0070" />
-  <testcase classname="com.tasc.util.test.Multiply_Test" name="testMultiply" time="0.0010" />
-  <system-out><![CDATA[Test use of Addition class
-Result: 9
-Test use of Multiply class
-Result: 20
-]]></system-out>
+  <testcase classname="com.tasc.util.Multiply" name="initializationError" time="0.0040">
+    <error message="No runnable methods" type="java.lang.Exception">java.lang.Exception: No runnable methods
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+</error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
